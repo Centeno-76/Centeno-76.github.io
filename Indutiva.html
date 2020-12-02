@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./_css/global.css">
+  <link rel="stylesheet" href="./_css/indutiva.css">
+  <script src="calculoProbi.js"></script>
+  <title>Probabilidade</title>
+</head>
+<body>
+  <a href="Index.html"><button id="voltar">Voltar</button></a>
+  <h1>Indutiva</h1>
+<!--Aqui inicia a entrada de dados para os cálculos da binomial-->
+  <div class="content">
+    <div class="binomial distribuicoes">
+      <h1>Binomial</h1>
+      <div class="inputs">
+        <label for="amostraBinomial">Amostra</label>    <!--A-->
+        <input type="number" id="amostraBinomial" placeholder="Ex: 30">
+      </div>
+
+      <div class="inputs">
+        <label for="sucesso">Sucesso</label>
+        <input type="number" id="sucesso" min="0" max="1" step="0.01" placeholder="Ex: 0.8">
+      </div>
+      
+      <div class="inputs">
+        <label for="fracasso">Fracasso</label>
+        <input type="number" id="fracasso" min="0" max="1" step="0.01" placeholder="Ex: 0.2">
+      </div>
+
+      <div class="inputs">
+        <label for="evento">Evento</label>
+        <input type="text" id="evento" placeholder="Separe por ;">
+      </div>
+      <button id="calcularBinomial">Calcular</button>
+
+      <div class="resultadosBinomial"></div>
+    </div>
+
+    <!--Aqui inicia a entrada de dados para os cálculos da Normal-->
+    <div class="normal distribuicoes">
+      <h1>Normal</h1>
+      <div class="inputs">
+        <label for="mediaNormal">Média</label>
+        <input type="number" id="mediaNormal" placeholder="Ex: 300">  
+      </div>
+
+      <div class="inputs">
+        <label for="desvioNormal">Desvio Padrão</label>
+        <input type="number" id="desvioNormal" placeholder="Ex: 20">  
+      </div>
+
+      <div class="inputs">
+        <label for="tipoIntervaloNormal">Tipo de Intervalo</label>
+        <select id="tipoIntervaloNormal">  
+          <option value="entre">Entre</option>
+          <option value="maior">Maior que</option>
+          <option value="menor">Menor que</option>
+        </select>
+      </div>
+
+      <div class="inputs">
+        <label for="intervalo">Intervalo</label>
+        <input type="text" id="intervalo" placeholder="Ex: 280;300">
+      </div>
+      <button id="calcularNormal">Calcular</button>
+
+      <div class="resultadosNormal"></div>
+    </div>
+    <!--Aqui inicia a entrada de dados para os cálculos da Uniforme-->
+    <div class="uniforme distribuicoes">
+      <h1>Uniforme</h1>
+      <div class="inputs">
+        <label for="minimo">Mínimo</label>
+        <input type="number" id="minimo" placeholder="Ex. 800">  
+      </div>
+
+      <div class="inputs">
+        <label for="maximo">Máximo</label>
+        <input type="number" id="maximo" placeholder="Ex. 1800">  
+      </div>
+
+      <div class="inputs">
+        <label for="tipoIntervaloUniforme">Tipo de Intervalo</label>
+        <select id="tipoIntervaloUniforme">  
+          <option value="entre">Entre</option>
+          <option value="maior">Maior que</option>
+          <option value="menor">Menor que</option>
+        </select>
+      </div>
+
+      <div class="inputs">
+        <label for="distancia">Distância</label>
+        <input type="text" id="distancia" placeholder="Ex. 1300;1500">  
+      </div>
+      <button id="calcularUniforme">Calcular</button>
+
+      <div class="resultadosUniforme"></div>
+    </div>
+  </div>  
+
+  <script src="./calculoIndutivaBinomial.js" type="module"></script>
+  <script src="./calculoIndutivaNormal.js" type="module"></script>
+  <script src="./calculoIndutivaUniforme.js" type="module"></script>
+  <script src="./tabelaNormal.js" type="module"></script>
+</body>
+</html>

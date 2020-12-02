@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descritiva</title>
+  <link rel="stylesheet" href="./_css/global.css">
+  <link rel="stylesheet" href="./_css/descritiva.css">
+</head>
+<body>
+  <h1>Descritiva</h1>
+  <a href="Index.html"><button id="voltar">Voltar</button></a>
+  <div id="InputText"> 
+    <label for="VarNome" id="LabelNome">Nome: </label>
+    <input type="text" id="VarNome"> <!--Input nome da variavel-->
+
+    <label for="VarValor" id="LabelValor">Valor:</label>
+    <input type="text" id="VarValor" placeholder="Separe com ;">
+
+  </div>
+
+  <input type="file" id="inputArquivo">
+
+  <div id="FormInput">
+    <div id="Quali"><!--Option Button Qualitativa-->
+      <h3>Qualitativa</h3> 
+      
+      <label for="QualNominal">Nominal</label>
+      <input type="radio" id="QualNominal" name="Inputs" value="nominal" checked>
+
+
+      <label for="QualOrdinal">Ordinal</label>
+      <input type="radio" id="QualOrdinal" name="Inputs" value="ordinal">
+    </div>
+
+    <div id="Quant"><!--Option Button Quanti-->
+      <h3>Quantitativa</h3> 
+      <label for="QtDiscreta">Discreta</label>
+      <input type="radio" id="QtDiscreta" name="Inputs" value="discreta">
+
+      <label for="QtContinua">Continua</label>
+      <input type="radio" id="QtContinua" name="Inputs" value="continua">
+
+    </div>
+  </div>
+
+  <div id="selectTipoCalc"> <!-- Amostra e População-->
+    <select id="TipoCalc">
+      <option value="amostra">Amostra</option>
+      <option value="populacao"> População</option>
+    </select>
+  </div>
+
+   
+  <div id="Botoes2"><!-- Downside Button-->
+    <button id="Calcular" type="button">Calcular</button>
+  </div>
+
+  <div>
+    <h2>Separatriz</h2>
+    <form class="formSeparatriz">
+      <select  id="separatriz">
+        <option value="4" selected>Quartil</option>
+        <option value="5">Quintil</option>
+        <option value="10">Decil</option>
+        <option value="100">Percentil</option>
+      </select>
+      <select id="numSeparatriz">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+  
+      <button id="CalcularSeparatriz" type="button">Calcular</button>
+      <input type="text" id="resultSeparatriz" readonly>
+    </form>
+  </div>
+
+  <table class="tabela">
+  </table>
+
+
+  <div class="medidas"></div>
+  
+  <!-- SCRIPT -->
+  <script src="calculosDescritiva.js"></script>
+  <!--Link para a biblioteca mychart de gráficos-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  
+  <!--Cria uma tela para os gráficos com um ID-->  
+  <canvas id="myChart"></canvas>
+  
+  <script>     
+  
+  </script>
+
+</body>
+</html>

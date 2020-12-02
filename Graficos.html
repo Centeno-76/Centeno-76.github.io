@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/index.css">
+    <title>Gráficos</title>
+</head>
+<body>
+  <div id="Grafico">
+
+    <canvas class="line-chart"></canvas>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="calculos.js"></script>
+<section >
+    <table>
+        <thead>
+            <tr>
+                
+            </tr>
+        </thead>
+    </table>
+</section>
+<script>
+    Calcular()
+
+    var ctx = document.getElementsByClassName("line-chart")
+    var myLineChart = new Chart(ctx, {
+    type: tipo,
+    data: {
+        labels: G,
+        datasets:[
+            {
+                label: Obj.Titulo,
+                data: I,
+                
+                
+            }
+            
+        ]
+    }
+});
+
+Chart.draw(data)
+
+
+</script>
+</div>
+
+</body>
+</html>

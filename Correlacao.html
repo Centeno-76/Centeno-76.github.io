@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_css/global.css">
+    <link rel="stylesheet" href="./_css/correlacao.css">
+    <title>Correlação</title>
+</head>
+<body>
+  <a href="Index.html" target="_top"> <button id="Limpar">Voltar</button></a>
+  <div class="InputCorrelacao">
+
+    <h3>Correlação</h3>
+
+    <div class="inputs">
+      <label for="inputX">Valores de X</label>
+      <input id="inputX" placeholder="Separe por ';'">
+    </div>
+
+    <div class="inputs">
+      <label for="inputY">Valores de Y</label>
+      <input id="inputY" placeholder="Separe por ';'">
+    </div>
+
+    <input type="file" id="arquivoCorrelação">
+
+    <button id="calcular">Calcular</button>
+
+    <div class="regressao">
+      <label for="regressaoX">X</label>
+      <input type="number" id="regressaoX">
+      <button id="calcularRegressaoX">Calcular</button>
+      <input type="number" id="resultadoX" readonly>
+    </div>
+
+    <div class="regressao">
+      <label for="regressaoY">Y</label>
+      <input type="number" id="regressaoY">
+      <button id="calcularRegressaoY">Calcular</button>
+      <input type="number" id="resultadoY" readonly>
+    </div>
+  </div>
+
+  <div>
+    <p class="textoCorrelacao"></p>
+  </div>
+
+  <script src="./calculoCorrelacao.js"></script>
+</body>
+</html>

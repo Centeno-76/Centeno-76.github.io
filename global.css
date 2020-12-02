@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  padding: 10px;
+}
+body {
+  background-color: rgb(240, 240, 240);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+div { 
+  text-align: center;
+  padding: 15px;  
+  font-size: 40px;
+  /*tentanto integrar novo aspecto*/
+}
+
+select, input {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.formSeparatriz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.formSeparatriz * {
+  margin: 5px 10px;
+}
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  border-spacing: 10px;
+  border-color: grey;
+  border: 1px solid #000;
+  margin: auto;
+  
+}
+
+th{
+  border: 0.5px solid #000;
+  width: 100px;
+}
+td {
+text-align: center;
+}
+table tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: default
+}
+
+.medidas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.medidas div {
+  font-size: 16pt;
+  font-weight: bolder;
+}
+
+button {
+  width: 90px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+
+  font-size: 10pt;
+  transition: .2s ease-in
+}
+
+button:hover {
+  width: 100px;
+  cursor: pointer
+}
+
+#voltar {
+  background: #fff;
+}
+
+#voltar:hover {
+  background: #fff;
+  width: 90px
+}
+#inputArquivo {
+  margin: auto;
+}

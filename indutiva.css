@@ -1,0 +1,72 @@
+.content {
+  display: grid;
+  grid-template-columns: 33vw 33vw;
+}
+
+.distribuicoes {
+  display: flex;
+  flex-direction: column;
+  
+  min-height: 380px; 
+  padding: 40px;
+
+  position: relative;
+}
+
+.binomial {
+  grid-column-start: 0;
+  grid-column-end: 1;
+}
+
+.normal {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.uniforme {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+
+.inputs input,
+.inputs select {
+  width: 100%;
+}
+
+.inputs label {
+  font-size: 15pt;
+  margin-right: 20px
+}
+
+.distribuicoes button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.distribuicoes p {
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffff;
+  margin-bottom: 5px;
+}
+h1{
+  text-align: center;
+  padding-top: 21px;
+  font-size: 50px;
+}
+h1:hover{
+  color: rgb(112, 97, 97); 
+  cursor: default;
+}

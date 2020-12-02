@@ -1,0 +1,52 @@
+.InputCorrelacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputs {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+}
+
+.inputs input,
+.inputs select {
+  width: 100%;
+}
+
+.inputs label {
+  font-size: 15pt;
+  margin-right: 20px
+}
+
+.distribuicoes button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.distribuicoes p {
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffff;
+  margin-bottom: 5px;
+}
+
+.regressao {
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+}
+
+.regressao input {
+  width: 30%
+}
+
+.regressao * {
+  margin: 10px
+}
